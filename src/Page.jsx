@@ -5,20 +5,20 @@ import { Box, Paper, Typography } from "@mui/material";
 import AppMenu from "./AppMenu";
 
 export default function Page() {
-    return (
-        <Container>
-            <AppMenu />
-            <Paper>
-                <Container sx={{ pb: 5 }}>
-                    <Box sx={{ pb: 3 }} />
-                    <Typography variant={"h4"} component={"div"}>
+  return (
+    <Container>
+      <AppMenu />
+      <Paper>
+        <Container sx={{ pb: 5 }}>
+          <Box sx={{ pb: 3 }} />
+          {/* <Typography variant={"h4"} component={"div"}>
                         Anthony Donsereaux
-                    </Typography>
+                    </Typography> */}
 
-                    <Box sx={{ pb: 3 }} />
-                    <Outlet />
-                </Container>
-            </Paper>
+          <Box sx={{ pb: 3 }} />
+          <Outlet />
         </Container>
-    );
+      </Paper>
+    </Container>
+  );
 }

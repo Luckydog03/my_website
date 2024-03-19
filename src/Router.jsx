@@ -3,60 +3,34 @@ import React from "react";
 import Page from "./Page";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
 
 export default function Router() {
-    const router = createBrowserRouter([
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Page />,
+      children: [
         {
-            path: "/",
-            element: <Page />,
-            children: [
-                {
-                    path: "/",
-                    element: <Home />,
-                },
-                // {
-                //     path: "/register",
-                //     element: <Register {...props} />,
-                // },
-                // {
-                //     path: "/login",
-                //     element: <Login {...props} />,
-                // },
-                // {
-                //     path: "/forgot",
-                //     element: <Forgot {...props} />,
-                // },
-                // {
-                //     path: "/game",
-                //     element: (
-                //         <RequireAuth {...props}>
-                //             <Game {...props} />
-                //         </RequireAuth>
-                //     ),
-                // },
-                // {
-                //     path: "/account",
-                //     element: (
-                //         <RequireAuth {...props}>
-                //             <Account {...props} />
-                //         </RequireAuth>
-                //     ),
-                // },
-                {
-                    path: "/about",
-                    element: <About />,
-                },
-                // {
-                //     path: "/invite",
-                //     element: (
-                //         <RequireAuth {...props}>
-                //             <Invite {...props} />
-                //         </RequireAuth>
-                //     ),
-                // },
-            ],
+          path: "/",
+          element: <Home />,
         },
-    ]);
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/Projects",
+          element: <Projects />,
+        },
+        {
+          path: "/Experience",
+          element: <Experience />,
+        },
+      ],
+    },
+  ]);
 
-    return <RouterProvider router={router} />;
+  return <RouterProvider router={router} />;
 }

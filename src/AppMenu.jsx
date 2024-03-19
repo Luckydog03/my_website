@@ -5,11 +5,12 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import "./styles/AppMenu.css";
 
 export default function AppMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -17,7 +18,7 @@ export default function AppMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -42,20 +43,25 @@ export default function AppMenu() {
             open={open}
             onClose={handleClose}
             MenuListProps={{
-                "aria-labelledby": "basic-button",
+              "aria-labelledby": "basic-button",
             }}
           >
             <Typography>
               <Link to={"/About"}>
-                <MenuItem onClick={handleClose}>
-                  About Me
-                </MenuItem>
+                <MenuItem onClick={handleClose}>About Me</MenuItem>
+              </Link>
+              <Link to={"/Projects"}>
+                <MenuItem onClick={handleClose}>Projects</MenuItem>
+              </Link>
+              <Link to={"/Experience"}>
+                <MenuItem onClick={handleClose}>Experience</MenuItem>
               </Link>
             </Typography>
           </Menu>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>
-              Donsereaux
+              Anthony Donsereaux Jr.
             </Link>
           </Typography>
         </Toolbar>

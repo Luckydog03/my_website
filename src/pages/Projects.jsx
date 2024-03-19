@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Home() {
+export default function Projects() {
   return (
     <div>
-      <p>Home Page </p>
+      <p>Projects Page</p>
     </div>
   );
 }
