@@ -11,9 +11,6 @@ export default function Page() {
       <Paper>
         <Container sx={{ pb: 5 }}>
           <Box sx={{ pb: 3 }} />
-          {/* <Typography variant={"h4"} component={"div"}>
-                        Anthony Donsereaux
-                    </Typography> */}
 
           <Box sx={{ pb: 3 }} />
           <Outlet />
