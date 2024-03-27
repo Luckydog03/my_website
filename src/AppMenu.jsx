@@ -67,11 +67,11 @@ export default function AppMenu() {
             </Link>
           </Typography>
 
-          <Link to={"/https://github.com/Luckydog03/my_website"} style={{color: "inherit"}}>
+          <Link to={{pathname: "https://github.com/Luckydog03/my_website"}} target="_blank" style={{color: "inherit"}}>
             <GitHubIcon/>
           </Link>
           
-          <Link to={"www.linkedin.com/in/anthony-donsereaux-jr"} style={{color: "inherit"}}>
+          <Link to={{pathname:"https://www.linkedin.com/in/anthony-donsereaux-jr"}} target="_blank" style={{color: "inherit"}}>
             <LinkedInIcon/>
           </Link>
           
