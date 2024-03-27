@@ -9,8 +9,9 @@ import { Grid } from "@mui/material";
 
 export default function Experience() {
   return (
-    <Card sx={{ minHeight: 300, display: "flex", alignContent: "center" }}>
-      {/*sx={{display: "flex",flexDirection: "column"}}>*/}
+    <Card>
+      {" "}
+      {/*sx={{ minHeight: 300, display: "flex", alignContent: "center" }}>*/}
       <Grid
         sx={{
           width: 4 / 5,
@@ -20,13 +21,10 @@ export default function Experience() {
           m: "auto",
         }}
       >
-        <Grid sx={{ width: 4 / 5 }}>
-          {/*, display: "flex", , alignItems: "right"}}> */}
-          <CardActionArea href={Resume2} target="DonsereauxResume.pdf">
-            <CardMedia component="img" image={Resume} alt="Resume" />
-          </CardActionArea>
-        </Grid>
-        <Typography>
+        <Typography variant="h5" gutterBottom>
+          Undergraduate Teaching Assistant
+        </Typography>
+        <Typography sx={{ mt: 2 }}>
           Extra words to look at and understand the format of how this page will
           look after I apply flex and image size and random other things just to
           fill up the word count.Something cool is the discovery of new planets
@@ -84,6 +82,11 @@ export default function Experience() {
           how different planets form. It is fascinating to think about the
           possibilities of life beyond our own planet.
         </Typography>
+        <Grid sx={{ width: 4 / 5 }}>
+          <CardActionArea href={Resume2} target="DonsereauxResume.pdf">
+            <CardMedia component="img" image={Resume} alt="Resume" />
+          </CardActionArea>
+        </Grid>
       </Grid>
     </Card>
   );
