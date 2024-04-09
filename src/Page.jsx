@@ -13,12 +13,12 @@ export default function Page() {
     <Container>
       <AppMenu />
       {/* <Paper> */}
-        {/* <Container sx={{ pb: 5 }}> */}
-          <Box sx={{ pb: 5 }} />
+      {/* <Container sx={{ pb: 5 }}> */}
+      <Box sx={{ pb: 5 }} />
 
-          <Box sx={{ pb: 5 }} />
-          <Outlet />
-        {/* </Container> */}
+      <Box sx={{ pb: 5 }} />
+      <Outlet />
+      {/* </Container> */}
       {/* </Paper> */}
     </Container>
   );
