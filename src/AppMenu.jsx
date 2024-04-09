@@ -69,23 +69,17 @@ export default function AppMenu() {
             </Link>
           </Typography>
 
-          <Link
-            to={{ pathname: "https://github.com/Luckydog03/my_website" }}
-            target="_blank"
-            style={{ color: "inherit" }}
-          >
-            <GitHubIcon />
-          </Link>
+          <a href="https://github.com/Luckydog03/my_website" target="_blank" >
+            <div>
+              <GitHubIcon/>
+            </div>
+          </a>
 
-          <Link
-            to={{
-              pathname: "https://www.linkedin.com/in/anthony-donsereaux-jr",
-            }}
-            target="_blank"
-            style={{ color: "inherit" }}
-          >
-            <LinkedInIcon />
-          </Link>
+          <a href="https://www.linkedin.com/in/anthony-donsereaux-jr" target="_blank">
+            <div>
+              <LinkedInIcon/>
+            </div>
+          </a>
         </Toolbar>
       </AppBar>
     </Box>
