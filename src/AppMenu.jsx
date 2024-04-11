@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Button, Typography, Menu, MenuItem } from "@mui/material";
+import { Box, Typography, Menu, MenuItem, Button } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useTheme } from "@mui/material/styles";
 import "./styles/AppMenu.css";
 
 export default function AppMenu() {
@@ -21,11 +22,12 @@ export default function AppMenu() {
     setAnchorEl(null);
   };
 
+  const theme = useTheme();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar>
+      <AppBar sx={{ bgcolor: theme.palette.primary.main }}>
         {" "}
-        {/*position="static">*/}
         <Toolbar>
           <IconButton
             id="basic-button"
@@ -69,15 +71,18 @@ export default function AppMenu() {
             </Link>
           </Typography>
 
-          <a href="https://github.com/Luckydog03/my_website" target="_blank" >
+          <a href="https://github.com/Luckydog03/my_website" target="_blank">
             <div>
-              <GitHubIcon/>
+              <GitHubIcon />
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/in/anthony-donsereaux-jr" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/anthony-donsereaux-jr"
+            target="_blank"
+          >
             <div>
-              <LinkedInIcon/>
+              <LinkedInIcon />
             </div>
           </a>
         </Toolbar>

@@ -1,10 +1,10 @@
 import React from "react";
-import { Paper, Typography, Card } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 
 export default function Projects() {
   return (
-    <Card>
-      <Paper sx={{ mb: 2 }}>
+    <div>
+      <Paper sx={{ mb: 4 }}>
         <Typography variant="h5" gutterBottom>
           {" "}
           Personal Website
@@ -24,7 +24,7 @@ export default function Projects() {
         </Typography>
       </Paper>
 
-      <Paper sx={{ mb: 2 }}>
+      <Paper sx={{ mb: 4 }}>
         <Typography variant="h5" gutterBottom>
           RPG Video Game
         </Typography>
@@ -37,6 +37,6 @@ export default function Projects() {
           work on and update frequently until completion.
         </Typography>
       </Paper>
-    </Card>
+    </div>
   );
 }
