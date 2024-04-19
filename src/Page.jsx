@@ -39,7 +39,7 @@ export default function Page() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
+       <CssBaseline />
       <Container
         sx={{
           bgcolor:
@@ -57,8 +57,8 @@ export default function Page() {
         <Box>
           <FormControlLabel control={<Switch checked={toggleDarkMode} onChange={toggleDarkTheme}/>} label="Lights"/>
         </Box>
-        <Outlet />
+        <Outlet/>
       </Container>
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 }
