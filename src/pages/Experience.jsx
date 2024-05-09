@@ -26,10 +26,10 @@ export default function Experience() {
           Undergraduate Teaching Assistant
         </Typography>
         <Typography sx={{ mt: 2, mb: 2 }}>
-        As a Teaching Assistant for the Computer Science department, 
+        As a Teaching Assistant in the Computer Science department, 
         I lead introductory courses in Python and Java, catering to 
         an average class size of 150 undergraduate students. My 
-        responsibilities extend beyond lecturing and include designing, 
+        responsibilities extend beyond lecturing to include designing, 
         administering, and grading examinations and coursework that 
         challenge and enhance the students' understanding and skills 
         in programming.
@@ -47,22 +47,22 @@ export default function Experience() {
           Assistant Manager
         </Typography>
         <Typography sx={{ mt: 2, mb: 2 }}>
-        At the age of 17, I stepped into a leadership role 
-        as an Assistant Manager at Dion's Pizza. This position proved to 
-        be an opportunity far exceeding my expectations in 
-        terms of skill and experience development. In my managerial capacity, 
-        I oversaw the entire food preparation process within the restaurant, 
-        ensuring that every dish met our high standards for quality and safety.
+        At the age of 17, I stepped into a leadership role as an Assistant 
+        Manager at Dion's Pizza. This position proved to be an opportunity 
+        that far exceeded my expectations in terms of skill and experience 
+        development. In my managerial capacity, I oversaw the entire food 
+        preparation process within the restaurant, ensuring that every dish 
+        met our high standards for quality and safety.
 
-        My responsibilities extended beyond kitchen management; I monitored and 
-        enforced stringent food safety protocols to maintain health standards. 
-        Managing the restaurant staff, I was actively involved in training new 
-        employees on everything from our specific culinary techniques, to the 
-        effective cleaning procedures. Customer service was a key focus, and 
-        I coached my team to deliver outstanding service that matched the quality 
-        of our food.
+        My responsibilities extended beyond kitchen management; I monitored 
+        and enforced stringent food safety protocols to maintain health standards. 
+        While managing the restaurant staff, I was actively involved in training 
+        new employees in everything from our specific culinary techniques to 
+        effective cleaning procedures. Customer service was a key focus, and I 
+        coached my team to deliver outstanding service that matched the quality of 
+        our food.
 
-        Additionally, I was tasked with task delegation, optimizing both time and 
+        Additionally, I was tasked with delegating tasks, optimizing both time and 
         financial management to enhance store operations and profitability. My role 
         required a balanced approach to leadership, emphasizing efficiency, safety, 
         and customer satisfaction—all of which were critical in maintaining the 
@@ -73,14 +73,13 @@ export default function Experience() {
           Software Engineering & Object-Oriented Design courses
         </Typography>
         <Typography sx={{ mt: 2, mb: 2 }}>
-          The Software Engineering and Object-Oriented Design courses at Colorado 
-          State University are both designed after the workplace. Both courses 
-          are team based with the goal of your team developing a website within 
-          the semester. The courses taught Reactjs, Java, HTML, and CSS for coding the site.
-          The courses also taught Scrum and Agile development for team design.
-          Both courses taught me a lot about teamwork, and Software Development
-          far beyond any of my other courses. These courses are a defining point
-          in my programming career that I'll always hold close to my heart.
+        The Software Engineering and Object-Oriented Design courses at Colorado State 
+        University are both modeled after the workplace. These team-based courses have 
+        the goal of each team developing a website within the semester. They cover ReactJS, 
+        Java, HTML, and CSS for coding the site, as well as Scrum and Agile development 
+        methodologies for team design. These courses taught me a great deal about teamwork 
+        and software development, far more than any of my other courses. They mark a defining 
+        point in my programming career that I will always hold close to my heart.
         </Typography>
         <Typography variant="h5" gutterBottom>
           Natural Sciences College Counsil:
@@ -100,10 +99,10 @@ export default function Experience() {
           Skills:
         </Typography>
         <Typography sx={{ mt: 2, mb: 2 }}>
-          Languages: (* = familiar)
-          <li>Java *</li> <li>C++ *</li> <li> Reactjs *</li> <li> HTML/CSS *</li> <li>Python</li> <li>SQL</li> <li>C</li>  
+          Languages: 
+          <li>Java </li> <li>C++ </li> <li> Reactjs </li> <li> HTML/CSS </li> <li>Python</li> <li>SQL</li> <li>C</li>  
           Development Tools:
-          <li>Github *</li> <li>VScode *</li> <li>mySQL</li> <li> Unreal Engine 5</li> <li>Postman</li> <li>Game Maker 2</li>
+          <li>Github </li> <li>VScode </li> <li>mySQL</li> <li> Unreal Engine 5</li> <li>Postman</li> <li>Game Maker 2</li>
           Soft Skills:
           <li>Agile & Scrum Development</li> <li> Team management</li> <li>Time management</li> <li>Training</li> <li>Teaching</li> <li>Customer Service</li>
           

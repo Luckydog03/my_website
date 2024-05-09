@@ -11,16 +11,16 @@ export default function Projects() {
         </Typography>
 
         <Typography>
-          My first hosted website created solely by myself is my a current large
-          project of mine. This portfolio website is a project I plan to come
-          back to, work on, update and add to for years to come. This site was
-          made using Reactjs, HTML, and CSS. The skeleton of the site was
-          created with Vite and design of the site is based with Material UI. I
-          based the website on a project I did in a course called
-          Object-Oriented Design where we designed a website where users can
-          sign up and play chess. Although this site doesn't incorproate a game,
-          I thought it as a great way to solidify my knowlegde gained from one
-          of my most impactful courses.
+        My first hosted website, created entirely by myself, is a large 
+        ongoing project of mine. This portfolio website is a project I 
+        plan to continually revisit, update, and expand for years to come. 
+        It was built using ReactJS, HTML, and CSS. The framework of the 
+        site was created with Vite, and the design is based on Material UI. 
+        I modeled the website after a project I completed in a course called 
+        Object-Oriented Design, where we designed a website that allowed users 
+        to sign up and play chess. Although this site doesn’t incorporate a 
+        game, I saw it as a great way to solidify the knowledge I gained from 
+        one of my most impactful courses.
         </Typography>
       </Paper>
 
@@ -30,11 +30,11 @@ export default function Projects() {
         </Typography>
 
         <Typography>
-          This project has recently begun to create a simple a simple RPG pixel
-          video game. A friend and I have begun planning and simple design of a
-          game project that we wish to complete. there's no deadline on when we
-          want the project to be done as of now, but it is a project we plan to
-          work on and update frequently until completion.
+        This project has recently expanded to include creating a simple RPG 
+        pixel video game. A friend and I have begun planning and designing a 
+        game project that we intend to complete. Currently, there's no set 
+        deadline for when we want the project to be finished, but it is a project 
+        we plan to work on and update frequently until completion.
         </Typography>
       </Paper>
     </div>
