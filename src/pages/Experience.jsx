@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardMedia, CardActionArea, Button } from "@mui/material";
-import Resume from "../assets/DonsereauxResume.jpg";
+import Resume from "../assets/DonsereauxResume.jpeg";
 import DownloadIcon from '@mui/icons-material/Download';
 import Resume2 from "../assets/DonsereauxResume.pdf";
 import Typography from "@mui/material/Typography";
