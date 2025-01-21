@@ -100,9 +100,9 @@ export default function Experience() {
         </Typography>
         <Typography sx={{ mt: 2, mb: 2 }}>
           Languages: 
-          <li>Java </li> <li>C++ </li> <li> Reactjs </li> <li> HTML/CSS </li> <li>Python</li> <li>SQL</li> <li>C</li>  
+          <li>Java </li> <li>C/C++ </li> <li>SQL</li> <li>Python</li> <li> Reactjs </li> <li> HTML/CSS </li> <li>Node.js</li> <li>Next.js</li> 
           Development Tools:
-          <li>Github </li> <li>VScode </li> <li>mySQL</li> <li> Unreal Engine 5</li> <li>Postman</li> <li>Game Maker 2</li>
+          <li>Github </li> <li>VScode </li> <li>mySQL</li> <li> Unreal Engine 5</li> <li>Postman</li> <li>Game Maker 2</li> <li>Unity</li> <li>Anaconda</li>
           Soft Skills:
           <li>Agile & Scrum Development</li> <li> Team management</li> <li>Time management</li> <li>Training</li> <li>Teaching</li> <li>Customer Service</li>
           
