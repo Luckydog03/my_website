@@ -7,6 +7,7 @@ import {
   Box,
   Switch,
 } from "@mui/material";
+import siteBackground from "./assets/siteBackground.jpg";
 import { createTheme } from "@mui/material/styles";
 import FormControlLabel from '@mui/material/FormControlLabel';
 import AppMenu from "./AppMenu";
@@ -17,48 +18,52 @@ import "@fontsource/roboto/700.css";
 
 export default function Page() {
   // state to manage the dark mode
-  const [toggleDarkMode, setToggleDarkMode] = useState(true);
+  // const [toggleDarkMode, setToggleDarkMode] = useState(true);
 
-  // function to toggle the dark mode as true or false
-  const toggleDarkTheme = () => {
-    setToggleDarkMode(!toggleDarkMode);
-  };
+  // // function to toggle the dark mode as true or false
+  // const toggleDarkTheme = () => {
+  //   setToggleDarkMode(!toggleDarkMode);
+  // };
 
   // applying the primary and secondary theme colors
   const darkTheme = createTheme({
     palette: {
-      mode: toggleDarkMode ? "dark" : "light",
+      // mode: toggleDarkMode ? "dark" : "light",
       primary: {
-        main: "#3c18f0",
+        main: "#000",
       },
       secondary: {
-        main: "#b6b3f5",
+        main: "#fff",
       },
     },
   });
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
+    <Box
+          sx={{
+          // {/* <FormControlLabel control={<Switch checked={toggleDarkMode} onChange={toggleDarkTheme}/>} label="Lights"/> */}
+          // Use the background image
+          width: "100vw",
+          minHeight: "100vh",
+          backgroundImage: `url(${siteBackground})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          
+          }}
+          >
       <Container
         sx={{
-          bgcolor:
-            darkTheme.palette.mode === "dark"
-              ? darkTheme.palette.background.default
-              : darkTheme.palette.secondary,
           pb: 5,
           pt: 10,
-          width: "100vw", // Viewport width
-          minHeight: "100vh", // Viewport height
-          maxWidth: "100vw", // Override maxWidth
         }}
       >
+        <CssBaseline />
         <AppMenu />
-        <Box>
-          <FormControlLabel control={<Switch checked={toggleDarkMode} onChange={toggleDarkTheme}/>} label="Lights"/>
-        </Box>
         <Outlet />
-      </Container>
-    </ThemeProvider>
+    </Container>
+    </Box>
+  </ThemeProvider>
   );
 }

@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div
       style={{
-        cursor: `url(${cursorJedi}), auto`,
+        // cursor: `url(${cursorJedi}), auto`,
         height: '100vh', // Full viewport height
         width: '100vw' // Full viewport width
       }}

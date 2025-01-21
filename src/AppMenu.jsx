@@ -39,7 +39,13 @@ export default function AppMenu() {
             edge="start"
             color="inherit"
             aria-label="basic-button"
-            sx={{ mr: 2 }}
+            sx={{
+              mr: 2,
+              display: {
+                xs: "block", // show on extra-small screens (mobile)
+                md: "none",  // hide on medium (desktop) and up
+              },
+            }}
           >
             <MenuIcon />
           </IconButton>
@@ -70,21 +76,26 @@ export default function AppMenu() {
               Anthony Donsereaux Jr.
             </Link>
           </Typography>
-
-          <a href="https://github.com/Luckydog03/my_website" target="_blank">
-            <div>
-              <GitHubIcon />
-            </div>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/anthony-donsereaux-jr"
-            target="_blank"
+          <Box
+            sx={{
+              display: {
+                xs: "none",  // hide on extra-small screens (mobile)
+                md: "flex",  // show on medium (desktop) and up
+              },
+            }}
           >
-            <div>
-              <LinkedInIcon />
-            </div>
-          </a>
+            <Button color="secondary" component={Link} to="/About" variant="text" size="large" sx={{mr: 2}}> About Me</Button>
+            <Button color="secondary" component={Link} to="/Experience" variant="text" size="large" sx={{mr: 2}}> Experience</Button>
+            <Button color="secondary" component={Link} to="/Projects" variant="text" size="large" sx={{mr: 2}}> Projects</Button>
+
+            
+          </Box>
+          <IconButton color="secondary" component={Link} to="https://www.linkedin.com/in/anthony-donsereaux-jr" target="_blank" sx={{mr: 2}}>
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton color="secondary" component={Link} to="https://github.com/Luckydog03/my_website" target="_blank" sx={{mr: 2}}>
+            <GitHubIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </Box>

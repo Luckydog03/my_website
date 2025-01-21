@@ -1,8 +1,7 @@
 import React from "react";
 import { Card, CardMedia, CardActionArea, Button } from "@mui/material";
-import Resume from "../assets/DonsereauxResume.jpeg";
 import DownloadIcon from '@mui/icons-material/Download';
-import Resume2 from "../assets/DonsereauxResume.pdf";
+import Resume from "../assets/DonsereauxResume.pdf";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 
@@ -68,6 +67,18 @@ export default function Experience() {
         and customer satisfaction—all of which were critical in maintaining the 
         esteemed reputation of Dion's Pizza.
         </Typography>
+        <Typography variant="h5" gutterBottom>
+          Consultant
+        </Typography>
+        <Typography sx={{ mt: 2, mb: 2 }}>
+        I collaborated with a technology startup to diagnose and resolve critical issues 
+        in the core code of their wildfire management platform. As part of this effort, 
+        I led the successful migration of the codebase across multiple operating systems, 
+        ensuring a seamless transition and minimal downtime. Additionally, I conducted 
+        hands-on training sessions to equip employees with the skills needed to run, 
+        maintain, and further develop the updated codebase, thereby fostering a more 
+        efficient and self-sufficient development environment.
+        </Typography>
 
         <Typography variant="h5" gutterBottom>
           Software Engineering & Object-Oriented Design courses
@@ -113,7 +124,7 @@ export default function Experience() {
           <Button
             variant="contained" // or "outlined", "text", etc., depending on your preference
             component="a" // Ensure it's treated as an anchor link
-            href={Resume2} // Your PDF file's path or URL
+            href={Resume} // Your PDF file's path or URL
             download="DonsereauxResume.pdf" // Suggests the filename for the downloaded file
             target="_blank" // Optional: Opens the link in a new tab/window
             startIcon={<DownloadIcon/>}
