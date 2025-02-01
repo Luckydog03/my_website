@@ -11,7 +11,7 @@ export default function Home() {
         justifyContent="space-between"
         alignItems="stretch"
       >
-        <Button component={Link} to="/About" variant="contained" sx={{ mb: 2 }}>
+        {/* <Button component={Link} to="/About" variant="contained" sx={{ mb: 2 }}>
           About Me
         </Button>
 
@@ -31,7 +31,7 @@ export default function Home() {
           sx={{ mb: 2 }}
         >
           My Projects
-        </Button>
+        </Button> */}
       </Grid>
     </Container>
   );
