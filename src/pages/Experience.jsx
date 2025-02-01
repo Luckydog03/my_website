@@ -68,7 +68,7 @@ export default function Experience() {
         esteemed reputation of Dion's Pizza.
         </Typography>
         <Typography variant="h5" gutterBottom>
-          Consultant
+          Tech Consultant
         </Typography>
         <Typography sx={{ mt: 2, mb: 2 }}>
         I collaborated with a technology startup to diagnose and resolve critical issues 
